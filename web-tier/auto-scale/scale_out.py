@@ -115,7 +115,6 @@ def scale_out():
 
     to_launch = min(20-total_instances, count_request_queue)
     
-    global enable_sleep
     enable_sleep = True
     
     logging.debug("Number of messages in queue: " + str(count_request_queue))
